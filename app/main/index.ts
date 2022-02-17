@@ -56,7 +56,7 @@ function createMainWindow(): Electron.BrowserWindow {
 
   const win = new electron.BrowserWindow({
     // This settings needs to be saved in config
-    title: "Zulip",
+    title: "Yim",
     icon: iconPath(),
     x: mainWindowState.x,
     y: mainWindowState.y,
@@ -98,7 +98,7 @@ function createMainWindow(): Electron.BrowserWindow {
     }
   });
 
-  win.setTitle("Zulip");
+  win.setTitle("Yim");
 
   win.on("enter-full-screen", () => {
     send(win.webContents, "enter-fullscreen");
@@ -348,7 +348,7 @@ ${error}`,
       AppMenu.setMenu(props);
       if (props.activeTabIndex !== undefined) {
         const activeTab = props.tabs[props.activeTabIndex];
-        mainWindow.setTitle(`Zulip - ${activeTab.webviewName}`);
+        mainWindow.setTitle(`Yim - ${activeTab.webviewName}`);
       }
     },
   );

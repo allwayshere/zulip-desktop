@@ -15,7 +15,7 @@ export function initShortcutsSection(props: ShortcutsSectionProps): void {
       <div class="settings-card tip">
         <p>
           <b><i class="material-icons md-14">settings</i>${t.__("Tip")}: </b
-          >${t.__("These desktop app shortcuts extend the Zulip webapp's")}
+          >${t.__("These desktop app shortcuts extend the Yim webapp's")}
           <span id="open-hotkeys-link"> ${t.__("keyboard shortcuts")}</span>.
         </p>
       </div>
@@ -48,7 +48,7 @@ export function initShortcutsSection(props: ShortcutsSectionProps): void {
           </tr>
           <tr ${process.platform === "darwin" ? "" : "hidden"}>
             <td><kbd>${cmdOrCtrl}</kbd> + <kbd>H</kbd></td>
-            <td>${t.__("Hide Zulip")}</td>
+            <td>${t.__("Hide Yim")}</td>
           </tr>
           <tr ${process.platform === "darwin" ? "" : "hidden"}>
             <td><kbd>Option</kbd> + <kbd>${cmdOrCtrl}</kbd> + <kbd>H</kbd></td>
@@ -56,7 +56,7 @@ export function initShortcutsSection(props: ShortcutsSectionProps): void {
           </tr>
           <tr>
             <td><kbd>${cmdOrCtrl}</kbd> + <kbd>Q</kbd></td>
-            <td>${t.__("Quit Zulip")}</td>
+            <td>${t.__("Quit Yim")}</td>
           </tr>
         </table>
         <div class="setting-control"></div>
@@ -158,11 +158,11 @@ export function initShortcutsSection(props: ShortcutsSectionProps): void {
           </tr>
           <tr ${process.platform === "darwin" ? "" : "hidden"}>
             <td><kbd>Option</kbd> + <kbd>${cmdOrCtrl}</kbd> + <kbd>I</kbd></td>
-            <td>${t.__("Toggle DevTools for Zulip App")}</td>
+            <td>${t.__("Toggle DevTools for Yim App")}</td>
           </tr>
           <tr ${process.platform === "darwin" ? "hidden" : ""}>
             <td><kbd>${cmdOrCtrl}</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></td>
-            <td>${t.__("Toggle DevTools for Zulip App")}</td>
+            <td>${t.__("Toggle DevTools for Yim App")}</td>
           </tr>
           <tr ${process.platform === "darwin" ? "" : "hidden"}>
             <td><kbd>Option</kbd> + <kbd>${cmdOrCtrl}</kbd> + <kbd>U</kbd></td>

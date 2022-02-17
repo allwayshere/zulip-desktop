@@ -836,7 +836,7 @@ class ServerManagerView {
           },
         },
         {
-          label: "Copy Zulip URL",
+          label: "Copy Yim URL",
           click: () => {
             clipboard.writeText(DomainUtil.getDomain(index).url);
           },

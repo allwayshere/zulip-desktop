@@ -15,7 +15,7 @@ export function initServersSection(props: ServersSectionProps): void {
     <div class="add-server-modal">
       <div class="modal-container">
         <div class="settings-pane" id="server-settings-pane">
-          <div class="page-title">${t.__("Add a Zulip organization")}</div>
+          <div class="page-title">${t.__("Add a Yim organization")}</div>
           <div id="new-server-container"></div>
         </div>
       </div>

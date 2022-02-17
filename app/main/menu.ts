@@ -85,7 +85,7 @@ function getToolsSubmenu(): Electron.MenuItemConstructorOptions[] {
       type: "separator",
     },
     {
-      label: t.__("Toggle DevTools for Zulip App"),
+      label: t.__("Toggle DevTools for Yim App"),
       accelerator:
         process.platform === "darwin" ? "Alt+Command+I" : "Ctrl+Shift+I",
       click(_item, focusedWindow) {
@@ -263,7 +263,7 @@ function getHelpSubmenu(): Electron.MenuItemConstructorOptions[] {
       enabled: false,
     },
     {
-      label: t.__("About Zulip"),
+      label: t.__("About Yim"),
       click(_item, focusedWindow) {
         if (focusedWindow) {
           sendAction("open-about");
@@ -414,7 +414,7 @@ function getDarwinTpl(props: MenuProps): Electron.MenuItemConstructorOptions[] {
           type: "separator",
         },
         {
-          label: t.__("Copy Zulip URL"),
+          label: t.__("Copy Yim URL"),
           accelerator: "Cmd+Shift+C",
           enabled: enableMenu,
           click(_item, focusedWindow) {
@@ -581,7 +581,7 @@ function getOtherTpl(props: MenuProps): Electron.MenuItemConstructorOptions[] {
           type: "separator",
         },
         {
-          label: t.__("Copy Zulip URL"),
+          label: t.__("Copy Yim URL"),
           accelerator: "Ctrl+Shift+C",
           enabled: enableMenu,
           click(_item, focusedWindow) {

@@ -14,7 +14,7 @@ test("app runs", async (t) => {
     app.on("window", (win) => put(windows, win));
 
     const mainWindow = await take(windows);
-    t.equal(await mainWindow.title(), "Zulip");
+    t.equal(await mainWindow.title(), "Yim");
 
     const mainWebview = await take(windows);
     await mainWebview.waitForSelector("#connect");

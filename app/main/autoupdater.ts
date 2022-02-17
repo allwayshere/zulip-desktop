@@ -46,7 +46,7 @@ export async function appUpdater(updateFromMenu = false): Promise<void> {
       }
 
       await dialog.showMessageBox({
-        message: `A new version ${info.version}, of Zulip Desktop is available`,
+        message: `A new version ${info.version}, of Yim Desktop is available`,
         detail:
           "The update will be downloaded in the background. You will be notified when it is ready to be installed.",
       });
@@ -61,7 +61,7 @@ export async function appUpdater(updateFromMenu = false): Promise<void> {
 
       await dialog.showMessageBox({
         message: "No updates available",
-        detail: `You are running the latest version of Zulip Desktop.\nVersion: ${app.getVersion()}`,
+        detail: `You are running the latest version of Yim Desktop.\nVersion: ${app.getVersion()}`,
       });
     }
   });
@@ -81,7 +81,7 @@ export async function appUpdater(updateFromMenu = false): Promise<void> {
         message: messageText,
         detail: `Error: ${error.message}
 
-The latest version of Zulip Desktop is available at -
+The latest version of Yim Desktop is available at -
 https://zulip.com/apps/.
 Current Version: ${app.getVersion()}`,
       });

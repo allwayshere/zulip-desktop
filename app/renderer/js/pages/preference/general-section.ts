@@ -91,7 +91,7 @@ export function initGeneralSection(props: GeneralSectionProps): void {
         </div>
         <div class="setting-row" id="silent-option">
           <div class="setting-description">
-            ${t.__("Mute all sounds from Zulip")}
+            ${t.__("Mute all sounds from Yim")}
           </div>
           <div class="setting-control"></div>
         </div>
@@ -569,7 +569,7 @@ export function initGeneralSection(props: GeneralSectionProps): void {
 
   async function factoryResetSettings(): Promise<void> {
     const clearAppDataMessage =
-      "When the application restarts, it will be as if you have just downloaded Zulip app.";
+      "When the application restarts, it will be as if you have just downloaded Yim app.";
     const getAppPath = path.join(app.getPath("appData"), app.name);
 
     const {response} = await dialog.showMessageBox({
