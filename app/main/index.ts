@@ -73,6 +73,7 @@ function createMainWindow(): Electron.BrowserWindow {
       worldSafeExecuteJavaScript: true,
     },
     show: false,
+    frame: false,
   });
 
   win.on("focus", () => {
