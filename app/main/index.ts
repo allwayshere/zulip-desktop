@@ -1,4 +1,4 @@
-import electron, {app, dialog, session} from "electron";
+import electron, {app, session} from "electron";
 import fs from "fs";
 import path from "path";
 
@@ -233,24 +233,6 @@ function createMainWindow(): Electron.BrowserWindow {
       await appUpdater();
     }
   });
-
-  app.on(
-    "certificate-error",
-    (
-      event: Event,
-      webContents: Electron.WebContents,
-      urlString: string,
-      error: string,
-    ) => {
-      const url = new URL(urlString);
-      dialog.showErrorBox(
-        "Certificate error",
-        `The server presented an invalid certificate for ${url.origin}:
-
-${error}`,
-      );
-    },
-  );
 
   page.session.setPermissionRequestHandler(
     (webContents, permission, callback, details) => {
