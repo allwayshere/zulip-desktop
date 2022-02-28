@@ -2,7 +2,7 @@
 
 ::-webkit-scrollbar {
   height: 8px;
-  width: 10px;
+  width: 9px;
   background-color: rgb(33, 45, 58);
   padding-left: 3px;
 }
@@ -10,7 +10,7 @@
 ::-webkit-scrollbar-thumb {
   z-index: 10px;
   background-color: rgb(165, 165, 172);
-  border-radius: 20px;
+  border-radius: 16px;
   transition: all 0.2s ease;
 }
 
