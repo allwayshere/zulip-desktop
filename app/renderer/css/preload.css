@@ -1,5 +1,24 @@
 /* Override css rules */
 
+::-webkit-scrollbar {
+  height: 8px;
+  width: 10px;
+  background-color: rgb(33, 45, 58);
+  padding-left: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  z-index: 10px;
+  background-color: rgb(165, 165, 172);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  z-index: 10px;
+  background-color: rgb(165, 165, 172);
+}
+
 .portico-wrap > .header {
   display: none;
 }
